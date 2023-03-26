@@ -27,6 +27,7 @@ public class zad1 {
     int array [][] = new int [2][];//Создание 2х-мерного массива из 2-х столбцов и х строк
     array = new int[2][1000]; 
     int count = 1;
+
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 12; j++ ){
             array[i][j] = count*count*count;
@@ -41,5 +42,6 @@ public class zad1 {
     System.out.printf("Введте число №2: ");
     int b = iScanner.nextInt();
     choice_dat(b, array);
+    iScanner.close();
     }
 }
